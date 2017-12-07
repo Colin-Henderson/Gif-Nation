@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<title>Gif Nation! Wooooo</title>
+</head>
+<body>
+
+<div class="btnz">
+<!-- This is where all of our buttons will appear -->
+</div>
+
+  
+
+
+<script type="text/javascript">
+
+var queryURL = "https://github.com/Giphy/GiphyAPI#public-beta-key"
+
+var topics = [ "steve brule", "trailer park boys", "nacho libre", "danny devito", "ric flair", "impractical jokers", "bobs burgers", "guy fieri", "danny mcbride", "stevie janowski", "dwight schrute", "snoop dogg", "will ferrell", "steve harvey"]
+// Here is my awesome for loop that dynamically creates my buttons within the btnz div, finally starting to incorporate some JQuery 
+for (var i = 0; i < topics.length; i++) {
+	$("<button id='buttons' />").text(topics[i]).appendTo(".btnz");
+};
+
+
+
+
+</script>
+<div id="gifs-appear-here">
+
+</body>
+</html>
